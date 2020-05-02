@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://www.crazy.co.jp/ -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/3ffdfeaa36"></script><script src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/nr-1167.min.js"></script><script type="text/javascript" async="" id="fjssync" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/mieruca-hm.js"></script><script type="text/javascript" async="" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/analytics.js"></script><script async="" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/uh.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"3ffdfeaa36",applicationID:"130686041"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+    <title>株式会社CRAZY(株式会社クレイジー) | CRAZY,Inc.</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta name="description" content="株式会社CRAZY(株式会社クレイジー)の公式サイト。CRAZY WEDDING、CRAZY KITCHENなどの事業内容紹介や、働き方、採用、会社情報を掲載しています。">
+    <meta name="keywords" content="株式会社CRAZY,株式会社クレイジー,クレイジー">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="shortcut icon" href="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/favicon.ico">
+    <link rel="stylesheet" href="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/style.css">
+    <meta property="og:title" content="株式会社CRAZY(株式会社クレイジー) | CRAZY,Inc.">
+    <meta property="og:site_name" content="株式会社CRAZY(株式会社クレイジー) | CRAZY,Inc.">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="株式会社CRAZY(株式会社クレイジー)の公式サイト。CRAZY WEDDING、CRAZY KITCHENなどの事業内容紹介や、働き方、採用、会社情報を掲載しています。">
+    <meta property="og:url" content="https://www.crazy.co.jp">
+    <meta property="og:image" content="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/ogp.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="株式会社CRAZY(株式会社クレイジー) | CRAZY,Inc.">
+    <meta name="twitter:description" content="株式会社CRAZY(株式会社クレイジー)の公式サイト。CRAZY WEDDING、CRAZY KITCHENなどの事業内容紹介や、働き方、採用、会社情報を掲載しています。">
+    <meta name="twitter:image" content="https://www.crazy.co.jp/wp-content/themes/crazy.co.jp/img/common/ogp.jpg">
+    <meta name="google-site-verification" content="4eho5q-_3w3M1wzcXlNj8LJ8-_a42aTvfvQIMJLpaDw">
+    <!-- Begin Mieruca Embed Code -->
+    <script type="text/javascript" id="mierucajs">
+    window.__fid = window.__fid || [];__fid.push([408088347]);
+    (function() {
+        function mieruca(){if(typeof window.__fjsld != "undefined") return; window.__fjsld = 1; var fjs = document.createElement('script'); fjs.type = 'text/javascript'; fjs.async = true; fjs.id = "fjssync"; var timestamp = new Date;fjs.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://hm.mieru-ca.com/service/js/mieruca-hm.js?v='+ timestamp.getTime(); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(fjs, x); };
+        setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent("onload", mieruca) : window.addEventListener("load", mieruca, false)) : mieruca();
+    })();
+    </script>
+    <!-- End Mieruca Embed Code -->
+    <link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="stylesheet" id="wp-polls-css" href="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/polls-css.css" type="text/css" media="all">
+<style id="wp-polls-inline-css" type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background-image: url('https://www.crazy.co.jp/wp-content/plugins/wp-polls/images/default/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+
+</style>
+<script type="text/javascript" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/jquery.js"></script>
+<script type="text/javascript" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/jquery-migrate.min.js"></script>
+  </head>
+  <body style="position: fixed; margin-top: 0px;">
+
+    <div class="l-page" data-page-id="index">
+      <div id="global-parts"><a href="https://www.crazy.co.jp/" class="p-global-logo"><svg xmlns="http://www.w3.org/2000/svg" width="164" height="33.135345666991235" viewBox="0 0 410.8 83" id="" class="c-crazy-logo p-global-logo__svg"><defs><mask id="crazy-logo-clippath"><path d="M186 73.4h-14.6l24.8-66.7h12.2z" class="c-crazy-logo__elm1"></path></mask></defs> <path d="M255.3 60.6l40.1-44.7h-36.7V4.8h54.5v11.1l-40 44.7h40v11.1h-58zM394.9 63.8H392v-1.7h7.8v1.7h-2.9v7.9h-2zM400.9 62.1h3.1l1.9 7.4 1.9-7.4h3v9.5h-1.9v-8l-2.1 8h-1.9l-2.1-8v8h-1.9zM52 27.3c-1.1-7.4-7.9-12.5-16.4-12.5-14.8 0-21 11.8-21 23.5s6.2 23.5 21 23.5c9.7 0 15.2-5.7 18-13.5l12.7 5.3c-6 13.4-15.9 19.9-30.7 19.9C11.8 73.4 0 57.1 0 38.3S13.4 3.1 35.6 3.1c14.9 0 26.3 7 29.9 21.1zM134.3 44.7C137.9 43.5 149 40 149 25c0-11.7-9.3-20.2-25.1-20.2h-31v66.9h14V15.9h13.2c9.7 0 14.3 3.9 14.3 10.1s-5.1 10.1-12.2 10.1h-8.4l20.9 35.7h16.2z" class="c-crazy-logo__elm2"></path> <path d="M102.5 36h31.7v8.74h-31.7zM375.5 45v26.7h-14.7V45.3L335.1 4.8h17.2l16 26.9 16.2-26.9h16.7zM196.1 6.7h12.2l24.8 66.7h-14.5z" class="c-crazy-logo__elm2"></path> <g class="c-crazy-logo__elm3"><path d="M163.2.6h70M163.2 2.4h70M163.2 4.3h70M163.2 6.2h70M163.2 8h70M163.2 11.7h70M163.2 15.5h70M163.2 19.2h70M163.2 22.9h70M163.2 26.6h70M163.2 30.3h70M163.2 34.1h70M163.2 37.8h70M163.2 41.5h70M163.2 45.2h70M163.2 48.9h70M163.2 52.7h70M163.2 56.4h70M163.2 60.1h70M163.2 63.8h70M163.2 67.5h70M163.2 71.3h70M163.2 75h70M163.2 76.8h70M163.2 78.7h70M163.2 80.6h70M163.2 82.4h70" class="c-crazy-logo__elm4"></path></g></svg></a> <a href="https://www.crazy.co.jp/" class="p-global-excerpt u-tt-u js-hover"><div class="p-global-excerpt-label"><img src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/crazy_corporate_site.svg" alt=""></div></a> <div class="p-global-utility"><div class="p-global-utility__wrap"><div class="p-global-utility__sns"><a href="https://www.facebook.com/crazyincjapan/" target="_blank" class="p-global-utility__sns-item p-global-utility__sns-item--facebook js-hover"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13.476635514018692" viewBox="0 0 117.7 226.6"><path d="M76.4 226.6V123.2h34.7l5.2-40.3H76.4V57.2c0-11.7 3.2-19.6 20-19.6h21.3v-36C114 1.1 101.3 0 86.6 0 55.8 0 34.8 18.8 34.8 53.2v29.7H0v40.3h34.8v103.4h41.6z"></path></svg></a><a href="https://twitter.com/CRAZYWEDDING_" target="_blank" class="p-global-utility__sns-item p-global-utility__sns-item--twitter js-hover"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="11.378200438917338" viewBox="0 0 273.4 222.2"><path d="M273.4 26.3c-10.1 4.5-20.9 7.5-32.2 8.8 11.6-6.9 20.5-17.9 24.7-31-10.9 6.4-22.9 11.1-35.7 13.6C220 6.8 205.4 0 189.3 0c-31 0-56.1 25.1-56.1 56.1 0 4.4.5 8.7 1.5 12.8C88 66.5 46.7 44.2 19 10.3c-4.8 8.3-7.6 17.9-7.6 28.2 0 19.5 9.9 36.6 25 46.7-9.2-.3-17.8-2.8-25.4-7v.7c0 27.2 19.3 49.8 45 55-4.7 1.3-9.7 2-14.8 2-3.6 0-7.1-.4-10.6-1 7.1 22.3 27.9 38.5 52.4 39-19.2 15-43.4 24-69.7 24-4.5 0-9-.3-13.4-.8 24.8 15.9 54.3 25.2 86 25.2 103.2 0 159.6-85.5 159.6-159.6 0-2.4-.1-4.9-.2-7.3 11.1-8 20.6-17.9 28.1-29.1z"></path></svg></a><a href="https://www.instagram.com/explore/locations/985864929/crazy-inccrazy/?max_id=1449988409690021366" target="_blank" class="p-global-utility__sns-item p-global-utility__sns-item--instagram js-hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 15 15"><path d="M1.7 15C.8 15 0 14.2 0 13.3V1.7C0 .8.8 0 1.7 0h11.6c.9 0 1.7.8 1.7 1.7v11.6c0 .9-.8 1.7-1.7 1.7H1.7zm-.6-8.7v6.6c0 .5.4.9.9.9h10.8c.5 0 .9-.4.9-.9V6.3l-.2-.3h-1.4l-.3.4c.1.4.2.8.2 1.3 0 2.4-2 4.4-4.5 4.4S3 10.1 3 7.6c0-.4 0-.8.1-1.2L2.9 6H1.4l-.3.3zm6.4-2.2c-1.9 0-3.4 1.5-3.4 3.3s1.5 3.3 3.4 3.3 3.4-1.5 3.4-3.3-1.5-3.3-3.4-3.3zm3.6-2.9c-.5 0-1 .4-1 1v1.7c0 .5.4 1 1 1h1.8c.5 0 1-.4 1-1V2.2c0-.5-.4-1-1-1h-1.8z"></path></svg></a></div><a href="https://www.crazy.co.jp/recruit/" class="p-global-utility__recruit u-tt-u js-hover"><div class="p-global-utility__recruit-label"><img src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/recruit.svg" alt=""></div></a></div></div> <div class="p-hamburger"><div class="p-hamburger__line p-hamburger__line--01"><div class="p-hamburger__line-in p-hamburger__line-in--01"></div></div> <div class="p-hamburger__line p-hamburger__line--02"><div class="p-hamburger__line-in p-hamburger__line-in--02"></div></div> <div class="p-hamburger__line p-hamburger__line--03"><div class="p-hamburger__line-in p-hamburger__line-in--03"></div></div> <div class="p-hamburger__line p-hamburger__line--cross01"><div class="p-hamburger__line-in p-hamburger__line-in--cross01"></div></div> <div class="p-hamburger__line p-hamburger__line--cross02"><div class="p-hamburger__line-in p-hamburger__line-in--cross02"></div></div></div> <div class="p-global-navi"><div class="p-global-navi__body"><div class="p-global-navi__body-in"><div class="p-global-navi__parents"><div class="p-global-navi__parents-in"><ul class="p-global-navi__menu"><li class="p-global-navi__menu-item p-global-navi__parents-item"><a href="https://www.crazy.co.jp/whoweare/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Who We Are</a></li> <li class="p-global-navi__menu-item p-global-navi__parents-item"><span class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Company</span></li> <li class="p-global-navi__menu-item p-global-navi__parents-item"><a href="https://www.crazy.co.jp/business/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Business</a></li> <li class="p-global-navi__menu-item p-global-navi__parents-item"><span class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Recruit</span></li> <li class="p-global-navi__menu-item p-global-navi__parents-item"><a href="https://www.crazy.co.jp/people/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">People</a></li> <li class="p-global-navi__menu-item p-global-navi__parents-item"><a href="https://www.crazy.co.jp/news/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">News &amp; Event</a></li> <li class="p-global-navi__menu-item p-global-navi__parents-item"><a href="https://www.crazy.co.jp/blog/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Crazy Magazine</a></li> <li class="p-global-navi__menu-item p-global-navi__parents-item"><a href="https://www.crazy.co.jp/contact/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Contact</a></li> <li class="p-global-navi__menu-item p-global-navi__menu-item--sns p-global-navi__parents-item"><div class="p-global-navi__menu-sns"><a href="https://www.facebook.com/crazyincjapan/" target="_blank" class="p-global-navi__menu-sns-item p-global-navi__menu-sns-item--facebook js-hover"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13.476635514018692" viewBox="0 0 117.7 226.6"><path d="M76.4 226.6V123.2h34.7l5.2-40.3H76.4V57.2c0-11.7 3.2-19.6 20-19.6h21.3v-36C114 1.1 101.3 0 86.6 0 55.8 0 34.8 18.8 34.8 53.2v29.7H0v40.3h34.8v103.4h41.6z"></path></svg></a><a href="https://twitter.com/CRAZYWEDDING_" target="_blank" class="p-global-navi__menu-sns-item p-global-navi__menu-sns-item--twitter js-hover"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="11.378200438917338" viewBox="0 0 273.4 222.2"><path d="M273.4 26.3c-10.1 4.5-20.9 7.5-32.2 8.8 11.6-6.9 20.5-17.9 24.7-31-10.9 6.4-22.9 11.1-35.7 13.6C220 6.8 205.4 0 189.3 0c-31 0-56.1 25.1-56.1 56.1 0 4.4.5 8.7 1.5 12.8C88 66.5 46.7 44.2 19 10.3c-4.8 8.3-7.6 17.9-7.6 28.2 0 19.5 9.9 36.6 25 46.7-9.2-.3-17.8-2.8-25.4-7v.7c0 27.2 19.3 49.8 45 55-4.7 1.3-9.7 2-14.8 2-3.6 0-7.1-.4-10.6-1 7.1 22.3 27.9 38.5 52.4 39-19.2 15-43.4 24-69.7 24-4.5 0-9-.3-13.4-.8 24.8 15.9 54.3 25.2 86 25.2 103.2 0 159.6-85.5 159.6-159.6 0-2.4-.1-4.9-.2-7.3 11.1-8 20.6-17.9 28.1-29.1z"></path></svg></a><a href="https://www.instagram.com/explore/locations/985864929/crazy-inccrazy/?max_id=1449988409690021366" target="_blank" class="p-global-navi__menu-sns-item p-global-navi__menu-sns-item--instagram js-hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 15 15"><path d="M1.7 15C.8 15 0 14.2 0 13.3V1.7C0 .8.8 0 1.7 0h11.6c.9 0 1.7.8 1.7 1.7v11.6c0 .9-.8 1.7-1.7 1.7H1.7zm-.6-8.7v6.6c0 .5.4.9.9.9h10.8c.5 0 .9-.4.9-.9V6.3l-.2-.3h-1.4l-.3.4c.1.4.2.8.2 1.3 0 2.4-2 4.4-4.5 4.4S3 10.1 3 7.6c0-.4 0-.8.1-1.2L2.9 6H1.4l-.3.3zm6.4-2.2c-1.9 0-3.4 1.5-3.4 3.3s1.5 3.3 3.4 3.3 3.4-1.5 3.4-3.3-1.5-3.3-3.4-3.3zm3.6-2.9c-.5 0-1 .4-1 1v1.7c0 .5.4 1 1 1h1.8c.5 0 1-.4 1-1V2.2c0-.5-.4-1-1-1h-1.8z"></path></svg></a></div></li></ul></div></div> <div class="p-global-navi__children"><div class="p-global-navi__children-in"><ul class="p-global-navi__menu"><li class="p-global-navi__menu-item p-global-navi__children-item"><a href="https://www.crazy.co.jp/company/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Company Top</a></li> <li class="p-global-navi__menu-item p-global-navi__children-item"><a href="https://www.crazy.co.jp/company/#boardmember" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Board Member</a></li> <li class="p-global-navi__menu-item p-global-navi__children-item"><a href="https://www.crazy.co.jp/company/history/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">History</a></li> <li class="p-global-navi__menu-item p-global-navi__children-item"><a href="https://www.crazy.co.jp/company/access/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Access</a></li></ul></div></div> <div class="p-global-navi__children"><div class="p-global-navi__children-in"><ul class="p-global-navi__menu"><li class="p-global-navi__menu-item p-global-navi__children-item"><a href="https://www.crazy.co.jp/recruit/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Recruit Top</a></li> <li class="p-global-navi__menu-item p-global-navi__children-item"><a href="https://www.crazy.co.jp/recruit/workstyle/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Work Style</a></li> <li class="p-global-navi__menu-item p-global-navi__children-item"><a href="https://www.crazy.co.jp/recruit/worksystem/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Work System</a></li> <li class="p-global-navi__menu-item p-global-navi__children-item"><a href="https://www.crazy.co.jp/recruit/joblist/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Job List</a></li> <li class="p-global-navi__menu-item p-global-navi__children-item"><a href="https://www.crazy.co.jp/recruit/entry/" class="p-global-navi__menu-item-wrap c-over-line c-over-line--white">Entry Form</a></li></ul></div></div></div></div> <div class="p-global-navi__bg"><div class="p-global-navi__bg-children"></div></div></div></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-33799085-14');
+</script>
+
+<!-- Begin Mieruca Embed Code -->
+<script type="text/javascript" id="mierucajs">
+window.__fid = window.__fid || [];__fid.push([408088347]);
+(function() {
+function mieruca(){if(typeof window.__fjsld != "undefined") return; window.__fjsld = 1; var fjs = document.createElement('script'); fjs.type = 'text/javascript'; fjs.async = true; fjs.id = "fjssync"; var timestamp = new Date;fjs.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://hm.mieru-ca.com/service/js/mieruca-hm.js?v='+ timestamp.getTime(); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(fjs, x); };
+setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent("onload", mieruca) : window.addEventListener("load", mieruca, false)) : mieruca();
+})();
+</script>
+<!-- End Mieruca Embed Code -->
+
+<script type="text/javascript" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/crazy-co-jp.js"></script>
+<div class="p-index-kv" style="transform: translate3d(0px, 0px, 0px);">
+  <div class="p-index-kv__title is-visible">
+    <div class="p-index-kv__title-in">
+      <div class="p-index-kv__title-row p-index-kv__title-row--01">
+        <div class="p-index-kv__title-row-in p-index-kv__title-row-in--01">Human</div>
+      </div>
+      <div class="p-index-kv__title-row p-index-kv__title-row--02">
+        <div class="p-index-kv__title-row-in p-index-kv__title-row-in--02">Business</div>
+      </div>
+      <div class="p-index-kv__title-row p-index-kv__title-row--03">
+        <div class="p-index-kv__title-row-in p-index-kv__title-row-in--03">Company</div>
+      </div>
+    </div>
+  </div>
+  <div class="p-index-kv__image-wrap">
+    <div class="p-index-kv__image p-index-kv__image--01"></div>
+    <div class="p-index-kv__image p-index-kv__image--02 is-animate"></div>
+    <div class="p-index-kv__image p-index-kv__image--03"></div>
+  </div>
+  <div class="p-index-kv__pager"><div class="p-index-kv__pager-item"></div><div class="p-index-kv__pager-item is-current"></div><div class="p-index-kv__pager-item"></div></div>
+  <div class="p-index-kv__scroll">
+    <div class="p-index-kv__scroll-pointer"></div>
+  </div>
+</div>
+<div class="l-contents l-contents--index" style="transform: translate3d(0px, 788px, 0px);">
+  <div class="c-section p-index-introduction js-scroll-item is-shown">
+    <h2 class="p-index-introduction__head u-tt-u js-scroll-item-child c-slide-in is-shown"><span class="c-slide-in__wrap1"><span class="c-slide-in__wrap2"><span class="c-slide-in__wrap3">Who We Are</span></span></span></h2>
+    <p class="p-index-introduction__text js-scroll-item-child is-shown">CRAZYは、企業の可能性を模索しているビジネス集団です。<br class="u-dn-mobile">既存の考え方・働き方にとらわれず、業界・事業を抜本から更新し<br class="u-dn-mobile">新たな可能性や真に理想だと言える組織運営の取り組みを発明しています。<br>私たちの活動の根幹は、理想から物事を<br class="u-dn-pc u-dn-tablet-l u-dn-mobile">「本質的に 美しく ユニークに」再定義する営み。<br class="u-dn-mobile">そして「クレイジーと言われるレベルでそれを行うこと」が<br class="u-dn-mobile">未来に必要な新しいサンプルをこの社会に生み出すことだと信じています。</p>
+    <a class="c-button c-button--pos-c c-button--size-m js-hover js-scroll-item-child is-shown" href="https://www.crazy.co.jp/whoweare/">
+      <span class="c-button__label">Read More</span>
+      <span class="c-button__border-v"></span>
+      <span class="c-button__border-h"></span>
+    </a>
+  </div>
+  <div class="c-section">
+    <div class="c-flexbox"><a class="c-flexbox__item c-flexbox__item--col3 js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/company/">
+        <div class="c-flexbox__item-thumb js-scroll-item-child is-shown">
+          <div class="c-flexbox__item-thumb-in"><img src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/thumb_company_index.jpg" alt=""></div>
+        </div>
+        <div class="c-flexbox__item-body js-scroll-item-child is-shown">
+          <h2 class="c-flexbox__item-head u-tt-u">Company</h2>
+          <p class="c-flexbox__item-text">会社概要・オフィスなど</p>
+          <div class="c-flexbox__item-readmore c-link-underline u-tt-u">Read More</div>
+        </div></a><a class="c-flexbox__item c-flexbox__item--col3 js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/business/">
+        <div class="c-flexbox__item-thumb js-scroll-item-child is-shown">
+          <div class="c-flexbox__item-thumb-in"><img src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/thumb_business.jpg" alt=""></div>
+        </div>
+        <div class="c-flexbox__item-body js-scroll-item-child is-shown">
+          <h2 class="c-flexbox__item-head u-tt-u">Business</h2>
+          <p class="c-flexbox__item-text">CRAZYが展開するサービス・事業一覧</p>
+          <div class="c-flexbox__item-readmore c-link-underline u-tt-u">Read More</div>
+        </div></a><a class="c-flexbox__item c-flexbox__item--col3 js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/people/">
+        <div class="c-flexbox__item-thumb js-scroll-item-child is-shown">
+          <div class="c-flexbox__item-thumb-in"><img src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/thumb_people.jpg" alt=""></div>
+        </div>
+        <div class="c-flexbox__item-body js-scroll-item-child is-shown">
+          <h2 class="c-flexbox__item-head u-tt-u">People</h2>
+          <p class="c-flexbox__item-text">CRAZYで働くすべてのメンバーのご紹介</p>
+          <div class="c-flexbox__item-readmore c-link-underline u-tt-u">Read More</div>
+        </div></a></div>
+  </div>
+<div class="c-section js-scroll-item is-shown">
+  <h2 class="c-section-header u-tt-u u-m-b-90 js-scroll-item-child c-slide-in is-shown"><span class="c-slide-in__wrap1"><span class="c-slide-in__wrap2"><span class="c-slide-in__wrap3">News &amp; Event</span></span></span></h2>
+  <div class="p-index-entries">
+    <div class="p-index-entries__recent"><a class="c-entry-item c-entry-item--index-l js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/news/articles/motherday/">
+<div class="c-entry-item__thumb c-entry-item__thumb--index-l js-scroll-item-child is-shown">
+  <div class="c-entry-item__thumb-in">
+    <img width="828" height="552" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/iwaigohan_mother-tw_1-min-828x552.jpg" class="attachment-entry-thumb size-entry-thumb wp-post-image" alt="">
+  </div>
+</div>
+<div class="c-entry-item__body c-entry-item__body--index-l js-scroll-item-child is-shown">
+  <div class="c-entry-item__body-in">
+    <div class="c-entry-item__prop c-entry-item__prop--index-l">
+      <div class="c-entry-item__category u-tt-u">PRESS RELEASE</div>
+      <div class="c-entry-item__date">2020/4/28</div>
+      
+    </div>
+    <div class="c-entry-item__title c-entry-item__title--index-l">母の日に、食卓を囲む時間を贈る「 IWAIのお祝いごはん便 母の日限定セット」の販売を開始いたします。</div>
+  </div>
+</div>
+</a>    </div>
+    <div class="p-index-entries__next-one"><a class="c-entry-item c-entry-item--index-s js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/news/articles/0414/">
+<div class="c-entry-item__thumb c-entry-item__thumb--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__thumb-in">
+    <img src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/thumb_default.jpg" alt="">
+  </div>
+</div>
+<div class="c-entry-item__body c-entry-item__body--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__body-in">
+    <div class="c-entry-item__prop c-entry-item__prop--s">
+      <div class="c-entry-item__category u-tt-u">PRESS RELEASE</div>
+      <div class="c-entry-item__date">2020/4/14</div>
+      
+    </div>
+    <div class="c-entry-item__title c-entry-item__title--index-s">今、結婚式を検討したい新郎新婦を応援する 「withコロナ時代の結婚式宣言！」に賛同表明いたします 〜2020年4月14日（火）より11社55の結婚式場と協力〜</div>
+  </div>
+</div>
+</a><a class="c-entry-item c-entry-item--index-s js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/news/articles/iwaigohan/">
+<div class="c-entry-item__thumb c-entry-item__thumb--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__thumb-in">
+    <img width="828" height="552" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/iwaigohan_dinner_peteax2-828x552.jpg" class="attachment-entry-thumb size-entry-thumb wp-post-image" alt="">
+  </div>
+</div>
+<div class="c-entry-item__body c-entry-item__body--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__body-in">
+    <div class="c-entry-item__prop c-entry-item__prop--s">
+      <div class="c-entry-item__category u-tt-u">PRESS RELEASE</div>
+      <div class="c-entry-item__date">2020/4/13</div>
+      
+    </div>
+    <div class="c-entry-item__title c-entry-item__title--index-s">記念日にご自宅でプロの味を楽しめる 「IWAIのお祝いごはん便」の提供を開始いたします。</div>
+  </div>
+</div>
+</a><a class="c-entry-item c-entry-item--index-s js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/news/articles/0408/">
+<div class="c-entry-item__thumb c-entry-item__thumb--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__thumb-in">
+    <img src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/thumb_default.jpg" alt="">
+  </div>
+</div>
+<div class="c-entry-item__body c-entry-item__body--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__body-in">
+    <div class="c-entry-item__prop c-entry-item__prop--s">
+      <div class="c-entry-item__category u-tt-u">PRESS RELEASE</div>
+      <div class="c-entry-item__date">2020/4/8</div>
+      
+    </div>
+    <div class="c-entry-item__title c-entry-item__title--index-s">新型コロナウイルス感染症（COVID-19）の感染拡大防止に伴う業務縮小のお知らせ</div>
+  </div>
+</div>
+</a>    </div>
+  </div>
+  <a class="c-button c-button--pos-c c-button--size-m js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/news/">
+    <span class="c-button__label">View All</span>
+    <span class="c-button__border-v"></span>
+    <span class="c-button__border-h"></span>
+  </a>
+</div>  <a class="p-joinus-banner js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/recruit/">
+    <div class="p-joinus-banner__wrap">
+      <div class="p-joinus-banner__body">
+        <div class="p-joinus-banner__body-in">
+          <h2 class="p-joinus-banner__head u-tt-u">Recruit</h2>
+          <div class="c-link-underline u-tt-u">Join us</div>
+        </div>
+      </div>
+      <div class="p-joinus-banner__bg-wrap">
+        <div class="p-joinus-banner__bg p-joinus-banner__bg--01"></div>
+        <div class="p-joinus-banner__bg p-joinus-banner__bg--02 is-animate"></div>
+        <div class="p-joinus-banner__bg p-joinus-banner__bg--03 is-animate"></div>
+      </div>
+    </div>
+  </a>
+<div class="c-section js-scroll-item is-shown">
+  <h2 class="c-section-header u-tt-u u-m-b-90 js-scroll-item-child c-slide-in is-shown"><span class="c-slide-in__wrap1"><span class="c-slide-in__wrap2"><span class="c-slide-in__wrap3">Crazy Magazine<!--<span class="c-section-header-hyphen c-section-header-hyphen--gray">Feature Sample Library</span>--></span></span></span></h2>
+  <div class="p-index-entries">
+    <div class="p-index-entries__recent"><a class="c-entry-item c-entry-item--index-l js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/blog/articles/iwaigohan/">
+<div class="c-entry-item__thumb c-entry-item__thumb--index-l js-scroll-item-child is-shown">
+  <div class="c-entry-item__thumb-in">
+    <img width="828" height="552" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/5M2A9072-min-828x552.jpg" class="attachment-entry-thumb size-entry-thumb wp-post-image" alt="" srcset="https://img.crazy.co.jp/wp-content/uploads/2020/04/13221037/5M2A9072-min-828x552.jpg 828w, https://img.crazy.co.jp/wp-content/uploads/2020/04/13221037/5M2A9072-min-300x200.jpg 300w, https://img.crazy.co.jp/wp-content/uploads/2020/04/13221037/5M2A9072-min-768x512.jpg 768w, https://img.crazy.co.jp/wp-content/uploads/2020/04/13221037/5M2A9072-min-1024x683.jpg 1024w" sizes="(max-width: 828px) 100vw, 828px">
+  </div>
+</div>
+<div class="c-entry-item__body c-entry-item__body--index-l js-scroll-item-child is-shown">
+  <div class="c-entry-item__body-in">
+    <div class="c-entry-item__prop c-entry-item__prop--index-l">
+      <div class="c-entry-item__category u-tt-u">BUSINESS</div>
+      <div class="c-entry-item__date">2020/4/13</div>
+      
+    </div>
+    <div class="c-entry-item__title c-entry-item__title--index-l">距離を超えて、想いを乗せて〜IWAIのお祝いごはん便〜</div>
+  </div>
+</div>
+</a>    </div>
+    <div class="p-index-entries__next-one"><a class="c-entry-item c-entry-item--index-s js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/blog/articles/0414/">
+<div class="c-entry-item__thumb c-entry-item__thumb--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__thumb-in">
+    <img width="828" height="552" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/c7f3f3c8b87d675d499520d5267560716_4620693218508958086_200418_0003-min-828x552.jpg" class="attachment-entry-thumb size-entry-thumb wp-post-image" alt="">
+  </div>
+</div>
+<div class="c-entry-item__body c-entry-item__body--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__body-in">
+    <div class="c-entry-item__prop c-entry-item__prop--s">
+      <div class="c-entry-item__category u-tt-u">EVENT</div>
+      <div class="c-entry-item__date">2020/4/18</div>
+      
+    </div>
+    <div class="c-entry-item__title c-entry-item__title--index-s">「この時期を未来の糧に」 いま、イベントを開催したことで気付かされたこと。</div>
+  </div>
+</div>
+</a><a class="c-entry-item c-entry-item--index-s js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/blog/articles/sakiyamakawa-2/">
+<div class="c-entry-item__thumb c-entry-item__thumb--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__thumb-in">
+    <img width="828" height="552" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/saki1200-828x552.png" class="attachment-entry-thumb size-entry-thumb wp-post-image" alt="">
+  </div>
+</div>
+<div class="c-entry-item__body c-entry-item__body--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__body-in">
+    <div class="c-entry-item__prop c-entry-item__prop--s">
+      <div class="c-entry-item__category u-tt-u">INTERVIEW</div>
+      <div class="c-entry-item__date">2020/3/27</div>
+      
+    </div>
+    <div class="c-entry-item__title c-entry-item__title--index-s">「小さな世界で苛立つ自分から決別したかった」——山川咲、CRAZYから離れ、独立</div>
+  </div>
+</div>
+</a><a class="c-entry-item c-entry-item--index-s js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/blog/articles/creative/">
+<div class="c-entry-item__thumb c-entry-item__thumb--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__thumb-in">
+    <img width="828" height="552" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/b21eab0603e0717bea42191214ded3d4-828x552.png" class="attachment-entry-thumb size-entry-thumb wp-post-image" alt="" srcset="https://img.crazy.co.jp/wp-content/uploads/2020/03/08115642/b21eab0603e0717bea42191214ded3d4-828x552.png 828w, https://img.crazy.co.jp/wp-content/uploads/2020/03/08115642/b21eab0603e0717bea42191214ded3d4-300x200.png 300w, https://img.crazy.co.jp/wp-content/uploads/2020/03/08115642/b21eab0603e0717bea42191214ded3d4-768x512.png 768w, https://img.crazy.co.jp/wp-content/uploads/2020/03/08115642/b21eab0603e0717bea42191214ded3d4-1024x683.png 1024w" sizes="(max-width: 828px) 100vw, 828px">
+  </div>
+</div>
+<div class="c-entry-item__body c-entry-item__body--s js-scroll-item-child is-shown">
+  <div class="c-entry-item__body-in">
+    <div class="c-entry-item__prop c-entry-item__prop--s">
+      <div class="c-entry-item__category u-tt-u">BUSINESS</div>
+      <div class="c-entry-item__date">2020/3/8</div>
+      
+    </div>
+    <div class="c-entry-item__title c-entry-item__title--index-s">CRAZY初の地方式場リニューアル——提案したのは「未完成な会場」だった</div>
+  </div>
+</div>
+</a>    </div>
+  </div>
+  <a class="c-button c-button--pos-c c-button--size-m js-hover js-scroll-item is-shown" href="https://www.crazy.co.jp/blog/">
+    <span class="c-button__label">View All</span>
+    <span class="c-button__border-v"></span>
+    <span class="c-button__border-h"></span>
+  </a>
+</div></div>
+<div class="l-gf js-scroll-item is-shown">
+  <div class="p-footer-logo"><a href="https://www.crazy.co.jp/">
+      <svg class="c-crazy-logo p-footer-logo__svg" xmlns="http://www.w3.org/2000/svg" width="164" height="33.135345666991235" viewBox="0 0 410.8 83" id="">
+        <defs>
+          <mask id="crazy-logo-clippath">
+            <path class="c-crazy-logo__elm1" d="M186 73.4h-14.6l24.8-66.7h12.2z"></path>
+          </mask>
+        </defs>
+        <path class="c-crazy-logo__elm2" d="M255.3 60.6l40.1-44.7h-36.7V4.8h54.5v11.1l-40 44.7h40v11.1h-58zM394.9 63.8H392v-1.7h7.8v1.7h-2.9v7.9h-2zM400.9 62.1h3.1l1.9 7.4 1.9-7.4h3v9.5h-1.9v-8l-2.1 8h-1.9l-2.1-8v8h-1.9zM52 27.3c-1.1-7.4-7.9-12.5-16.4-12.5-14.8 0-21 11.8-21 23.5s6.2 23.5 21 23.5c9.7 0 15.2-5.7 18-13.5l12.7 5.3c-6 13.4-15.9 19.9-30.7 19.9C11.8 73.4 0 57.1 0 38.3S13.4 3.1 35.6 3.1c14.9 0 26.3 7 29.9 21.1zM134.3 44.7C137.9 43.5 149 40 149 25c0-11.7-9.3-20.2-25.1-20.2h-31v66.9h14V15.9h13.2c9.7 0 14.3 3.9 14.3 10.1s-5.1 10.1-12.2 10.1h-8.4l20.9 35.7h16.2z"></path>
+        <path class="c-crazy-logo__elm2" d="M102.5 36h31.7v8.74h-31.7zM375.5 45v26.7h-14.7V45.3L335.1 4.8h17.2l16 26.9 16.2-26.9h16.7zM196.1 6.7h12.2l24.8 66.7h-14.5z"></path>
+        <g class="c-crazy-logo__elm3">
+          <path class="c-crazy-logo__elm4" d="M163.2.6h70M163.2 2.4h70M163.2 4.3h70M163.2 6.2h70M163.2 8h70M163.2 11.7h70M163.2 15.5h70M163.2 19.2h70M163.2 22.9h70M163.2 26.6h70M163.2 30.3h70M163.2 34.1h70M163.2 37.8h70M163.2 41.5h70M163.2 45.2h70M163.2 48.9h70M163.2 52.7h70M163.2 56.4h70M163.2 60.1h70M163.2 63.8h70M163.2 67.5h70M163.2 71.3h70M163.2 75h70M163.2 76.8h70M163.2 78.7h70M163.2 80.6h70M163.2 82.4h70"></path>
+        </g>
+      </svg></a></div>
+  <div class="p-footer-copyright">© CRAZY,Inc. all rights reserved.</div>
+  <ul class="p-footer-navi">
+    <li class="p-footer-navi__item"><a class="js-hover c-over-line c-over-line--gray" href="https://www.crazy.co.jp/company/access/">Access</a></li>
+    <li class="p-footer-navi__item"><a class="js-hover c-over-line c-over-line--gray" href="https://www.crazy.co.jp/recruit/">Recruit</a></li>
+    <li class="p-footer-navi__item"><a class="js-hover c-over-line c-over-line--gray" href="https://www.crazy.co.jp/news/">News &amp; Event</a></li>
+    <li class="p-footer-navi__item"><a class="js-hover c-over-line c-over-line--gray" href="https://www.crazy.co.jp/blog/">CRAZY Magazine</a></li>
+    <li class="p-footer-navi__item"><a class="js-hover c-over-line c-over-line--gray" href="https://www.crazy.co.jp/contact/">Contact</a></li>
+    <li class="p-footer-navi__item"><a class="js-hover c-over-line c-over-line--gray" href="https://www.crazy.co.jp/touch/">Touch the CRAZY</a></li>
+    <li class="p-footer-navi__item"><a class="js-hover c-over-line c-over-line--gray" href="https://www.crazy.co.jp/privacypolicy/">Privacy Policy</a></li>
+    <li class="p-footer-navi__item"><a class="js-hover c-over-line c-over-line--gray" href="https://www.crazy.co.jp/sitemap/">Sitemap</a></li>
+  </ul>
+  <div class="p-footer-news-letter"><a class="c-button c-button--footer c-button--pos-c js-hover js-scroll-item-child is-shown" href="https://www.crazy.co.jp/touch/#touch-us"><span class="c-button__label c-button__label--footer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18.75" viewBox="0 0 512 384">
+          <path d="M450.56 88.1v19.19L256.47 259.65 61.44 106.43V84.96l195.03 107.01L450.56 88.1z"></path>
+          <path d="M2 0a2 2 0 0 0-2 2v380a2 2 0 0 0 2 2h508a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm44.38 339.5a2 2 0 0 1-2-2v-291a2 2 0 0 1 2-2h419.24a2 2 0 0 1 2 2v291a2 2 0 0 1-2 2H46.38z"></path>
+        </svg>CRAZYメールマガジン登録</span><span class="c-button__border-v c-button__border-v--footer"></span><span class="c-button__border-h c-button__border-h--footer"></span></a></div>
+</div>
+</div>
+<script src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/vendor.min.js"></script>
+<script src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/main.min.js"></script>
+<!-- User Heat Tag -->
+<script type="text/javascript">
+(function(add, cla){window['UserHeatTag']=cla;window[cla]=window[cla]||function(){(window[cla].q=window[cla].q||[]).push(arguments)},window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul,tag);})('//uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uhoERGesW4'});
+</script>
+<!-- End User Heat Tag --><script type="text/javascript">
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"https:\/\/www.crazy.co.jp\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./株式会社CRAZY(株式会社クレイジー) _ CRAZY,Inc._files/polls-js.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3ffdfeaa36","applicationID":"130686041","transactionName":"YFxUMhBXWEpSBRdcCVkWdwUWX1lXHA8NUQNP","queueTime":0,"applicationTime":178,"atts":"TBtXRFhNS0Q=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+</body></html>
